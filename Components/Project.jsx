@@ -5,8 +5,18 @@ const Project = ({title, subtitle, summary, technologies, url}) => {
     <div className='flex space-x-24 align-center justify-around min-h-screen pl-12'>
     <div className='hidden 2xl:flex px-[12rem]'>
       <HoverVideoPlayer
-      className='self-center fixed scale-x-[1.85] scale-y-[1.90] pl-8'
-      videoSrc={"/vid/PokeAppDemo.mp4"}
+      className='z-20 self-center fixed scale-x-[1.85] scale-y-[1.90] pl-8'
+      videoSrc={`/vid/${title}Demo.mp4`}
+      pausedOverlay= {
+        <img src={`/vid/${title}Thumbnail.png`}
+             style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover'
+             }}
+             className= ' fixed pl-8'
+        />
+      }
       restartOnPaused
       />
     </div>

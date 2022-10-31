@@ -4,6 +4,7 @@ import Project from "../Components/Project";
 import { projects } from "../projects";
 import { useEffect, useState, useRef } from "react";
 import { ChevronDoubleUpIcon } from "@heroicons/react/outline";
+import Head from "next/head";
 
 export default function Home() {
   //Scroll up button feature
@@ -24,7 +25,7 @@ export default function Home() {
   //End of Scroll up button feature
 
   //Scroll to projects feature
-  const projectsRef = useRef(null);
+  const projectsRef = useRef([]);
 
   const scrollToProject = (project) => {
     switch (project) {
@@ -42,6 +43,10 @@ export default function Home() {
 
   return (
     <div className="relative h-[140vh] bg-[#fefffc]">
+      <Head>
+        <title>Nahuel Ferrari - Web Dev</title>
+        <link rel="icon" type="image/x-icon" href="/img/logo.png"></link>
+      </Head>
       <Header />
       <main className="relative flex flex-col w-screen py-24">
         <Banner scrollToProject={scrollToProject} />
