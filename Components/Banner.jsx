@@ -24,7 +24,7 @@ const Banner = ({scrollToProject}) => {
             <li><button onClick={() => scrollToProject("appflix")}>Appflix</button></li>
           </ul>
         </div>
-        <p className='z-10 fixed text-center bottom-5 lg:pt-24'>Visit my <a className=' text-blue-700' href='https://github.com/nferrarifi' target={'_blank'}>Github </a>
+        <p className='z-10 fixed text-center bottom-5 lg:pt-24'>Visit my <a className=' text-blue-700' href='https://github.com/nferrarifi' rel="noreferrer" target={'_blank'}>Github </a>
         or <a className=' text-blue-700' href='mailto:nahuel.ferrarifisicaro@gmail.com'>Contact me!</a>
         </p>
     </div>

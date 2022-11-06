@@ -1,21 +1,16 @@
 import HoverVideoPlayer from 'react-hover-video-player'
+import Image from 'next/image'
+
 
 const Project = ({title, subtitle, summary, technologies, url}) => {
   return (
     <div className='flex space-x-24 align-center justify-around min-h-screen pl-12'>
-    <div className='hidden 2xl:flex px-[12rem]'>
+    <div className='hidden 2xl:flex px-[12rem] ml-8'>
       <HoverVideoPlayer
-      className='z-20 self-center fixed scale-x-[1.85] scale-y-[1.90] pl-8'
+      className='z-20 self-center fixed scale-x-[1.85] scale-y-[1.90]'
       videoSrc={`/vid/${title}Demo.mp4`}
       pausedOverlay= {
-        <img src={`/vid/${title}Thumbnail.png`}
-             style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover'
-             }}
-             className= 'fixed pl-8'
-        />
+        <Image src={`/vid/${title}Thumbnail.png`} layout="fill"/>
       }
       restartOnPaused
       />
@@ -35,7 +30,7 @@ const Project = ({title, subtitle, summary, technologies, url}) => {
               </ul>
           </div>
           <div>
-            <a href={url} target="_blank" 
+            <a href={url} rel="noreferrer" target="_blank" 
             className='text-xl lg:text-5xl font-light text-blue-600 hover:bg-blue-600 hover:text-slate-100 rounded-md transition-all z-100 right-0'>Check it out!</a>
           </div>
         </div>
