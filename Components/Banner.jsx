@@ -16,11 +16,11 @@ const Banner = ({scrollToProject}) => {
   return (
     <>
     <div className='flex w-screen flex-col items-center justify-center p-12 space-y-8 lg:space-y-20 mt-16 mb-[50vh] cursor-default'>
-        <h1 className='text-3xl md:text-6xl lg:px-80 text-center lg:text-8xl font-semibold text-blue-700'>Welcome to my Portfolio!</h1>
-        <h2 className='md:text-4xl lg:px-80 text-center lg:text-6xl text-blue-700'>Click on the project you would like to see</h2>
+        <h1 className='text-3xl md:text-5xl lg:px-80 text-center 2xl:text-6xl font-semibold text-blue-700'>Welcome to my Portfolio!</h1>
+        <h2 className=' font-light  md:text-3xl lg:px-80 leading-3 text-center 2xl:text-6xl text-blue-700 2xl:w-[80%]'>Take a look at one of my deployed Projects!</h2>
         <div  className='space-y-4 items-center content-center'>
           <ul className='flex space-x-24 content-center items-center text-xl lg:text-3xl font-light'>
-            <li><button onClick={() => scrollToProject("pokeapp")}>PokeApp</button></li>
+            <li className=' font-light' ><button onClick={() => scrollToProject("pokeapp")}>PokeApp</button></li>
             <li><button onClick={() => scrollToProject("appflix")}>Appflix</button></li>
           </ul>
         </div>

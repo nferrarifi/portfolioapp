@@ -14,19 +14,19 @@ const Project = ({title, subtitle, summary, technologies, url}) => {
               height: '100%',
               objectFit: 'cover'
              }}
-             className= ' fixed pl-8'
+             className= 'fixed pl-8'
         />
       }
       restartOnPaused
       />
     </div>
-    <div className={`flex transition-all items-center cursor-default`}>
+    <div className={`flex min-w-[45%] transition-all items-center cursor-default`}>
         <div className="lg:text-xl space-y-4">
           <p className='lg:text-4xl font-semibold text-blue-600'>{title}</p>
           <p className='lg:text-xl font-light'>{subtitle}</p>
           <div className='hidden md:flex md:flex-col'>
-          <p className='text-blue-600'>Summary:</p>
-            <p className='w-[70%] lg:w-[40%]  text-justify font-light'>{summary}</p>
+            <p className='text-blue-600'>Summary:</p>
+            <p className='w-[70%] lg:w-[60%]  text-justify font-light'>{summary}</p>
           </div>
           <div>
             <p className='text-blue-600'>Built using:</p>

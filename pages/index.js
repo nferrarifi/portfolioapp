@@ -42,12 +42,12 @@ export default function Home() {
   //End of Scroll to projects feature
 
   return (
-    <div className="relative h-[140vh] bg-[#fefffc]">
+    <div className="relative font-poppins w-[100%] bg-gradient-to-b">
       <Head>
         <title>Nahuel Ferrari - Web Dev</title>
         <link rel="icon" type="image/x-icon" href="/img/logo.png"></link>
       </Head>
-      <Header />
+      <Header projectsRef={projectsRef} />
       <main className="relative flex flex-col w-screen py-24">
         <Banner scrollToProject={scrollToProject} />
         {isScrolled && (

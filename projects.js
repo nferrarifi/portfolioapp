@@ -17,7 +17,7 @@ export const projects = [
     title: "Appflix",
     subtitle: "Netflix main website imitation project",
     summary:
-      'This website, created in Next.JS and deployed in Vercel, aims to imitate the popular streaming website "Netflix", with completely functional and dynamic scrollable menus, movie trailers and descriptions.',
+      'This website, created in Next.JS making use of TypeScript and deployed in Vercel, aims to imitate the popular streaming website "Netflix", from its design choices, up to its dynamic and functional movie thumbnails and modals, fed via different APIs',
     technologies: [
       "Next.JS",
       "MongoDB",
@@ -25,6 +25,6 @@ export const projects = [
       "Firebase",
       "React Context",
     ],
-    url: "https://pokeapp-ac8sxdrbj-nferrarifi.vercel.app/",
+    url: "https://appflix-jade.vercel.app/",
   },
 ];
